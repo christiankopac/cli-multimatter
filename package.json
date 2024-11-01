@@ -1,0 +1,28 @@
+{
+  "name": "cli-multimatter",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun build ./src/index.ts --compile --outfile dist/multimatter",
+    "start": "bun run dist/index.js",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@types/marked-terminal": "^6.1.1",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "front-matter": "^4.0.2",
+    "fs": "^0.0.1-security",
+    "inquirer": "^12.0.1",
+    "marked": "^14.1.3",
+    "marked-terminal": "^7.2.1",
+    "ora": "^8.1.0",
+    "table": "^6.8.2",
+    "tsx": "^4.19.2",
+    "vitest": "^2.1.4",
+    "yaml": "^2.6.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
